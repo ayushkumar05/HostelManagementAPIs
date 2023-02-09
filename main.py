@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS users (
 """)
 conn.commit()
 conn.close()
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+CORS(app)
 
 
 # signup route
