@@ -56,6 +56,7 @@ def signup():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
+        print('POST SUCCESS')
         conn = sqlite3.connect("hosteldatabase.db")
         cursor = conn.cursor()
         # get user data
